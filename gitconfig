@@ -1,0 +1,13 @@
+[user]
+  name = Momin Zaheer
+  email = mzaheer@ise.com
+[color]
+  ui = auto
+[alias]
+  st = status
+  di = diff
+  ci = commit
+  br = branch
+  llog = log --date=local
+[rerere]
+  enabled = true
