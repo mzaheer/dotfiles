@@ -23,6 +23,7 @@
   ci = commit
   br = branch
   llog = log --date=local
+  pretty = log --graph --pretty=format:'%C(bold yellow)%h%Creset -%C(bold magenta) %s %C(bold cyan)(%cr) %C(bold green)<%an>%Creset' --abbrev-commit --date=relative
 [rerere]
   enabled = true
 [push]
