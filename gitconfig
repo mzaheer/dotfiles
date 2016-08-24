@@ -2,7 +2,21 @@
   name = Momin Zaheer
   email = mzaheer@ise.com
 [color]
-  ui = auto
+  ui = true
+[color "branch"]
+  current = blue bold
+  local = yellow
+  remote = magenta
+[color "diff"]
+  meta = yellow bold
+  frag = magenta bold
+  whitespace = white reverse
+[color "status"]
+  added = green bold
+  changed = blue bold
+  untracked = magenta bold
+  deleted = red bold
+  branch = yellow bold
 [alias]
   st = status
   di = diff
