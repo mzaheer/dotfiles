@@ -11,6 +11,7 @@
   meta = yellow bold
   frag = magenta bold
   whitespace = white reverse
+  commit = yellow bold
 [color "status"]
   added = green bold
   changed = blue bold
