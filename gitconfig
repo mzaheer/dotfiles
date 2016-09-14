@@ -25,6 +25,14 @@
   br = branch
   llog = log --date=local
   pretty = log --graph --pretty=format:'%C(bold yellow)%h%Creset -%C(bold magenta) %s %C(bold cyan)(%cr) %C(bold green)<%an>%Creset' --abbrev-commit --date=relative
+  authors = shortlog -sn
+  behind = !git log ..upstream/master --oneline
+  ahead = !git log upstream/master.. --oneline
+  upstream = !git cherry upstream/master
+  files = !git diff --name-only upstream/master..
+  dupes = !git rev-list --objects --all | cut -c1-7 | sort | uniq -c | grep -v '^ *1'
+  count = !git shortlog -n --no-merges --since '{last friday at 09:30:00}'
+  undo = reset HEAD@{1}
 [rerere]
   enabled = true
 [push]
