@@ -2,7 +2,7 @@
 
 source ~/.git-completion.bash
 source ~/.git-prompt.sh
-
+set -o vi
 MAGENTA="\[\033[0;35m\]"
 YELLOW="\[\033[0;33m\]"
 YELLOW_BOLD="\[\033[1;33m\]"
